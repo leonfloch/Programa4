@@ -12,17 +12,17 @@ import java.util.LinkedList;
 public class TamRelativo {
     
     /**
-     * 
+     * datos de classLoc para la tabla 1
      */
     private static final String TABLA1_CLASS_LOC = "data/table1-ClassLOC.txt";
     
     /**
-     * 
+     * datos de numero de metodos para la tabla 1
      */
     private static final String TABLA1_NUMBER_METHODS = "data/table1-NumMethods.txt";
     
     /**
-     * 
+     * tabla numero 2
      */
     private static final String TABLA_2 = "data/table2.txt";
     
