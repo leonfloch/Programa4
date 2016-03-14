@@ -1,8 +1,9 @@
-# Programa 3
+# Programa 4
 
-Assignment Kit for Program 3
+Assignment Kit for Program 4
 
 Personal Software Process (PSP)
+Relative Size Table
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
@@ -11,8 +12,8 @@ Personal Software Process (PSP)
 Tener istalado [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
-$ git clone https://github.com/leonfloch/RegresionLineal.git
-$ cd RegresionLineal
+$ git clone https://github.com/leonfloch/Programa4.git
+$ cd Programa4
 $ mvn install
 $ heroku local web
 ```
