@@ -1,1 +1,1 @@
-web:    java -cp target/classes:target/dependency/* InterfazRegresion
+web:    java -cp target/classes:target/dependency/* InterfazTamRelativo

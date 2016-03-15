@@ -36,7 +36,7 @@ public class TamRelativo {
     
     /**
      * Se toma informacion de los archivos donde se realizan los calculos
-     * para hallar el tamaño relativo
+     * para hallar el tamano relativo
      * @return tabla de resultado
      */
     //@METODO
