@@ -27,6 +27,18 @@ public class TamRelativo {
     private static final String TABLA_2 = "data/table2.txt";
     
     /**
+     * 
+     */
+    private static final String NOMBRE_2 = "Pgs/Chapter";
+    
+    /**
+     * 
+     */
+    private static final String NOMBRE_1 = "LOC/Method";
+    
+            
+    
+    /**
      * Constructor
      */
     //@METODO
@@ -46,10 +58,10 @@ public class TamRelativo {
         //calculo tabla 1
         LinkedList lOCMethod = calcularLOCMethod(Archivo.obtenerDatos(TABLA1_CLASS_LOC), 
                 Archivo.obtenerDatos(TABLA1_NUMBER_METHODS));        
-        resultados.add(calcularTamanoRelativo(lOCMethod));
+        resultados.add(calcularTamanoRelativo(lOCMethod, NOMBRE_1));
         
         //calculo tabla 2
-        resultados.add(calcularTamanoRelativo(Archivo.obtenerDatos(TABLA_2)));
+        resultados.add(calcularTamanoRelativo(Archivo.obtenerDatos(TABLA_2), NOMBRE_2));
                 
         return resultados;
     }
@@ -80,7 +92,7 @@ public class TamRelativo {
      * @return resultado
      */
     //@METODO
-    public TablaResultado calcularTamanoRelativo(LinkedList lOCMethod) {
+    public TablaResultado calcularTamanoRelativo(LinkedList lOCMethod, String nombre) {
         TablaResultado tablaResultado = new TablaResultado();
         
         //calcular promedio        
@@ -91,6 +103,7 @@ public class TamRelativo {
         double var = Cal.calcularVarianza(avg, logNatural);
         double raizVar = Math.sqrt(var);
                 
+        tablaResultado.setNombre(nombre);
         tablaResultado.setVs(Cal.redondeo(Math.exp((avg - (2 * raizVar))), 4));
         tablaResultado.setS(Cal.redondeo(Math.exp((avg - raizVar)), 4));
         tablaResultado.setM(Cal.redondeo(Math.exp(avg), 4));

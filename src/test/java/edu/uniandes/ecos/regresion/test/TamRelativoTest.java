@@ -47,7 +47,7 @@ public class TamRelativoTest extends TestCase {
                 Archivo.obtenerDatos(TABLA1_CLASS_LOC), 
                 Archivo.obtenerDatos(TABLA1_NUMBER_METHODS));
                 
-        TablaResultado resultado = tamRelativo.calcularTamanoRelativo(lOCMethod);
+        TablaResultado resultado = tamRelativo.calcularTamanoRelativo(lOCMethod, null);
         assertEquals(resultado.getVs(), 4.3953);
         assertEquals(resultado.getL(), 31.8811);
         assertEquals(resultado.getM(), 16.4696);
@@ -63,7 +63,7 @@ public class TamRelativoTest extends TestCase {
     //@METODO
     public void test2() {                        
         TablaResultado resultado = tamRelativo.calcularTamanoRelativo(
-                Archivo.obtenerDatos(TABLA_2));
+                Archivo.obtenerDatos(TABLA_2), null);
         assertEquals(resultado.getVs(), 6.3375);
         assertEquals(resultado.getL(), 14.9650);
         assertEquals(resultado.getM(), 11.2381);
