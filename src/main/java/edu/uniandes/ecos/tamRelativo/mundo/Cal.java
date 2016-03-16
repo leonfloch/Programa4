@@ -28,8 +28,8 @@ public class Cal {
         media = suma / valores.size();
 
         //redondeo
-        int cifras=(int) Math.pow(10,2);
-        media = Math.rint(media * cifras) / cifras;        
+        //int cifras=(int) Math.pow(10,2);
+        //media = Math.rint(media * cifras) / cifras;        
         
         return media;
     }
