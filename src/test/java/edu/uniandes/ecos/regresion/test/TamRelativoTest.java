@@ -56,5 +56,20 @@ public class TamRelativoTest extends TestCase {
         
     }
     
+    /**
+     * Tamano relativo para la tabla 2
+     */
+    @Test
+    //@METODO
+    public void test2() {                        
+        TablaResultado resultado = tamRelativo.calcularTamanoRelativo(
+                Archivo.obtenerDatos(TABLA_2));
+        assertEquals(resultado.getVs(), 6.3375);
+        assertEquals(resultado.getL(), 14.9650);
+        assertEquals(resultado.getM(), 11.2381);
+        assertEquals(resultado.getS(), 8.4393);
+        assertEquals(resultado.getVl(), 19.9280);        
+    }
+    
     
 }

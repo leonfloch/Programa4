@@ -59,10 +59,6 @@ public class InterfazTamRelativo {
         html.append("<html>");
         html.append("<table border=1>");
         html.append("<tr>");
-        html.append("<th>Test</th>");
-        html.append("<th colspan=\"5\">Actual Values</th>");
-        html.append("</tr>");
-        html.append("<tr>");
         html.append("<th></th>");
         html.append("<th>VS</th>");
         html.append("<th>S</th>");
