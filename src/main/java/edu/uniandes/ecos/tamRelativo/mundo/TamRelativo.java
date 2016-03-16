@@ -93,7 +93,7 @@ public class TamRelativo {
                 
         tablaResultado.setVs(Cal.redondeo(Math.exp((avg - (2 * raizVar))), 4));
         tablaResultado.setS(Cal.redondeo(Math.exp((avg - raizVar)), 4));
-        tablaResultado.setM(Cal.redondeo(avg, 4));
+        tablaResultado.setM(Cal.redondeo(Math.exp(avg), 4));
         tablaResultado.setL(Cal.redondeo(Math.exp(avg + raizVar), 4));
         tablaResultado.setVl(Cal.redondeo(Math.exp((avg + (2 * raizVar))), 4));
         
